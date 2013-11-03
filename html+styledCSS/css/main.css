@@ -1,0 +1,383 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+    background: #3b5998 url("../img/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+@font-face {
+    font-family: 'futuraExtended';
+    src: url('../fonts/FuturaExtended.ttf');
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Klavika';
+    src: url('../fonts/Klavika Font/KlavikaBoldBold.otf');
+    font-weight: bold;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    top: 20px;
+    margin-left: 20px;
+}
+
+.identifier{
+    font-family: "futuraExtended", "open-sans", "sans";
+    font-size: 18px;
+}
+
+.identifier span{
+    font-family: "Klavika";
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 960px;
+}
+
+footer{
+    position: fixed;
+    bottom: 20px;
+    margin-left: 20px;
+}
+footer h1{
+    font-family: "Klavika";
+    font-size: 46px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+/* VERSTUURVAK */
+.verstuur-vak{
+    width: 100%;
+    height: 115px;
+    margin-top: 40px;
+    margin-bottom: 77px;
+}
+
+.verstuur-vak textarea{
+    height: 135px;
+    width: 781px;
+    box-sizing: border-box;
+    float: left;
+}
+.verstuur-vak #invoerveld{
+    /*Dit kan ook*/
+}
+
+.knop{
+    width: 160px;
+    height: 42px;
+    float: right;
+    
+    background: #3b5998;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 3px 3px black;
+    font-family: "futuraExtended";
+}
+.knop:hover{
+    padding-top: 3px;
+    box-shadow:inset 2px 3px 3px black; 
+}
+
+.berichten-vak ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+/*De bericht vakjes*/
+.berichten-vak ul li{
+    width: 100%;
+}
+
+.groot-wit-vak{
+    background: #FFF; /*zelfde als background: white; of background: #FFFFFF of background: rgba(255,255,255,0)*/
+    color: #444;
+    padding: 10px 25px;
+    min-height: 115px;
+    width: 731px;
+    float: left;
+    margin-bottom: 25px;
+    
+    border-radius: 10px;
+    border: none;
+    color: #444444;
+    box-shadow: inset 2px 3px 3px black;
+    font-family: "Open Sans";
+    font-size: 18px;
+}
+
+.datum-vak{
+    float: right;
+    height: 106px;
+    width: 130px;
+    background: white;
+    color: black;
+    
+    padding: 15px;
+    
+    background: #3b5998;
+    border-radius: 10px;
+    border: none;
+    color: #e8e8e8;
+    box-shadow: inset 2px 3px 3px black;
+    font-family: "FuturaExtended";
+    
+    position: relative;
+    
+}
+
+.datum-vak .username{
+    font-size: 18px;
+}
+.datum-vak .tijd{
+    position: absolute;
+    bottom: 5px;
+    font-style: italic;
+    
+}
+
+.datum-vak .datum{
+    font-size: 36px;
+}
+
+.even{
+    float: right;
+}
+
+.even .groot-wit-vak{
+    float: right;
+}
+.even .datum-vak{
+    float: left;
+}
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
